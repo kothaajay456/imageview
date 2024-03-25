@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:text="ONE PIECE" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="290dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="19dp">
+
+        <ImageView
+            android:id="@+id/pic0"
+            android:layout_width="414dp"
+            android:layout_height="247dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/pic0"
+            tools:layout_editor_absoluteY="22dp" />
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="414dp"
+            android:layout_height="247dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/pic1"
+            android:alpha="0"
+            tools:layout_editor_absoluteY="22dp" />
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="414dp"
+            android:layout_height="247dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/pic2"
+            android:alpha="0"
+            tools:layout_editor_absoluteY="22dp" />
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="414dp"
+            android:layout_height="247dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic3"
+            tools:layout_editor_absoluteY="22dp" />
+        <ImageView
+            android:id="@+id/pic4"
+            android:layout_width="414dp"
+            android:layout_height="247dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic4"
+            tools:layout_editor_absoluteY="22dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bprev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/bnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_margin="3dp"
+        android:text="East Blue Arc" />
+
+
+</LinearLayout>
